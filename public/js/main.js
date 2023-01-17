@@ -41,3 +41,11 @@ let img2 = document.getElementsByClassName('img-responsive')[2];
 img2.addEventListener('click', () =>{
     img2.setAttribute('src', chemin);
 });
+
+let btn4 = document.getElementsByTagName('button')[3];
+btn4.addEventListener('click', ()=>{
+    let p1 = document.querySelector('.box:nth-child(8) .box-body p:nth-child(2)').innerText;
+    let p2 = document.querySelector('.box:nth-child(8) .box-body p:nth-child(4)').innerText;
+    document.querySelector('.box:nth-child(8) .box-body p:nth-child(2)').innerText = p2;
+    document.querySelector('.box:nth-child(8) .box-body p:nth-child(4)').innerText = p1;
+})
