@@ -18,4 +18,10 @@ let btn = document.getElementsByClassName('buttonExo')[0];
 btn.addEventListener('click', ()=>{
     p1.innerText = p2.innerText;
     p3.innerText = p2.innerText;
-})
+});
+
+let btn2 = document.getElementsByClassName('buttonExo')[1];
+btn2.addEventListener('click', () => {
+    let input = document.getElementsByTagName('input')[2];
+    document.getElementById('exo4').innerText = input.value;
+});
