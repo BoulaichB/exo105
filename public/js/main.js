@@ -25,3 +25,9 @@ btn2.addEventListener('click', () => {
     let input = document.getElementsByTagName('input')[2];
     document.getElementById('exo4').innerText = input.value;
 });
+
+let btn3 = document.getElementsByTagName('button')[2];
+btn3.addEventListener('click', ()=>{
+    console.log(document.querySelectorAll('.box-body p')[4].innerText)
+    document.getElementsByClassName('img-responsive')[0].setAttribute('src', document.querySelectorAll('.box-body p')[4].innerText.substring(9));
+})
