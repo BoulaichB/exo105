@@ -30,4 +30,14 @@ let btn3 = document.getElementsByTagName('button')[2];
 btn3.addEventListener('click', ()=>{
     console.log(document.querySelectorAll('.box-body p')[4].innerText)
     document.getElementsByClassName('img-responsive')[0].setAttribute('src', document.querySelectorAll('.box-body p')[4].innerText.substring(9));
-})
+});
+
+let img = document.getElementsByClassName('img-responsive')[1];
+let chemin;
+img.addEventListener('click', () =>{
+    chemin = img.getAttribute('src');
+});
+let img2 = document.getElementsByClassName('img-responsive')[2];
+img2.addEventListener('click', () =>{
+    img2.setAttribute('src', chemin);
+});
